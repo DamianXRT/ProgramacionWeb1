@@ -1,0 +1,43 @@
+/* Estilo global */
+* {
+    font-size: 25px;
+    margin: 0px;
+    
+}
+
+/* Estilo para el h1 */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(93, 94, 95);
+    border: 55px solid rgb(93, 94, 95);
+}
+
+/* Estilo para el párrafo */
+p {
+    text-align: center;
+    background-color: aqua;
+    border: 30px solid;
+    margin: 10px;
+}
+
+/* Estilo para el enlace de Damian */
+#miLink {
+    text-decoration: none;
+    color: white; /* Añadido para que el enlace sea visible sobre el fondo gris */
+}
+
+/* Estilo para el div de Damian */
+.contenido {
+    background-color: rgb(122, 122, 122);
+    padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
+    margin: 10px; /* Espacio externo para separarlo de otros elementos */
+    border: 2px solid black; /* Borde simple para destacar */
+    text-align: center; /* Centra el enlace dentro del div */
+}
+
+/* Estilo básico para los divs de otros programadores */
+.perfil {
+    background-color: lightgray; 
+    margin: 10px; /* Espacio externo */
+}
