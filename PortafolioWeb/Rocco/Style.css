@@ -1,0 +1,27 @@
+body{
+    background-color: coral;
+    background-image: url(Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#Cabeza{
+    text-align: center;
+    border-style: groove;
+    border-color: cadetblue;
+    background-color: hsl(60, 3%, 19%);
+    color: green;
+}
+
+.div{
+    background-color: hsl(60, 3%, 19%);
+    color: green;
+    list-style: square;
+
+}
+
+#PieP{
+    background-color:hsl(60, 3%, 19%);
+    
+}
