@@ -1,113 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programando</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Boca.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <script src="https://kit.fontawesome.com/712ca9c99a.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio Web</title>
 </head>
 <body>
-  <header>
-    <div class="titulo">
-      <h1 id="inicio"><u>HTML:introducción</u></h1>
-    </div>
-    <a href="navegadores.html" class="nave">Navegadores</a>
-    <nav>
-      <!--navegador-->
-      <div class="div-class">
-        <fieldset class="div-class__fiel">
-          <legend>Navegador</legend>
-          <ul class="ul-lis" type="circle">
-            <li><a href="#html" class="ul-lis__li">1-¿Que es HTML?</a></li>
-            <li><a href="#logo" class="ul-lis__li">2-Logo</a></li>
-            <li><a href="#elementos" class="ul-lis__li">3-Elementos</a></li>
-            <li><a href="#estructura" class="ul-lis__li">4-Estructura</a></li>
-            <li><a href="#explicacion" class="ul-lis__li">5-Explicación</a></li>
-            <!-- <li><a href="navegadores.html" class="ul-lis__li"><u>Navegadores</u></a></li> -->
-          </ul>
-        </fieldset>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!--pagina principal-->
-    <div class="pri">
-      <!--contenido del archivo-->
-      <h3 id="html">1.<u>¿Que es HTML?</u></h3>
-      <p><b>HTML</b>es un lenguaje de marcado, por ello su abreviación <b>H</b>iper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</p>
-      <p>No es considerado como lenguaje de programacion por ser solo la estructura de las paginas web <br>
-      es considerado como un lenguaje de hipervinculos, para poder armar una pagina. Imaginemosno un edificio en construcción donde podes ver las bigas, ladrillos, tubos, andamios bueno eso seria <b>HTML</b> para una pagina web <br>
-      Hipertexto hace referencia su conexión con otras paginas web o enlaces que crean hipervinculos donde se unen para crear de varios enlaces tan solo uno <br>
-      Se distinge <b>HTML</b> por el uso de sus <b><u>etiquetas</u></b> que tienen un apartura y un cierre en este caso es uso de las "&#60;" y "/&#62;" para que el browser pueda interpretar lo escrito <br>
-      un ejemplo de esto es la etiqueta de &#60;title&#62; &#60;/title&#62; como se puede ver tiene una apertura y un cierre con el unico distintivo que se cierra con un "/"</p> <br>
-    </div>
-    <div class="segun">
-      <h3 id="logo">2.<u>Logo del lenguaje</u></h3><br>
-      <img src="imagenes/html.jpg" alt="Logo del lenguaje" class="ima" title="logo HTML"><br>
-      <div class="segundop">
-        <p>Su distintivo 5 en el logo de <b>HTML</b> es por su ultima version que es HTML5</p>
-      </div>
-    </div>
-    <div class="terce">
-      <h3 id="elementos">3.<u>Elementos</u></h3>
-      <p>Se suelen ver por los Elementos de html todas las cosas que quisieramos hacerle a nuestra web, podemos agregarles titulos con &#60;title/&#62, podemos insertar imagenes con &#60;img/&#62, videos con &#60;video/&#62, elegir y segmentar a nuestro gusto</p>
-      <p> dividir las estructuras por "Section"(seccion), "form"(formulario), "div"(divisoria), "main"(principal), "article"(articulo), "footer"(pie de pagina), entre muchas mas...// <br>
-      <b>HTML</b> lo podemos imaginar como cajas, agrupando una y una a la ves identificando como lo queres tener, <b>HTML</b> son como las piezas vacias de una construcción donde sola hay una carpeta de cemento y nada mas, luego para darle estilos, colore, forma usaremos otro lenguaje de programación que se llama <b>CSS</b> es el que se va encargar de darle estuçilo a nuestra pieza</p>
-    </div>
-  </main>
-  <section>
-    <div class="cuarto">
-      <h3 id="estructura">4.<u>Estructura de HTML5</u></h3>
-        <div class="dentro">
-          <p>En esta seccion veremos un poco mas como va formado <b>HTML</b> explicando cada punto de su estructura</p>
-          <img src="imagenes/estructura_pagina_web.png" alt="Estructura de lenguaje" class="format">
-          <p>Lo que podemos observar en la imagen anterior es como se recomienda que este formado una pagina web. casi todos los sitios que se ven a menudo por internet estan compuestas de esta manera.</p>
-          <p>La etiqueta o tag en ingles <b>!DOCTYPE</b> hace referencia ala ultima version de <b>HTML</b> y que se esta usando para identificar al navegador que esta trabajando en la estructura <b>HTML</b></p>
-          <p>La etiqueta <b>Head</b> que en español es cabeza, tiene la peculiar funcionalidad de ingresar información para que el navegador entienda su formato.La etiqueta HEAD <b>NO</b> es visible para el usario solamente para el desarrolador, si ve la imagen puede notar que esta en rojo, eso significa que usuario que ingrese a la pagina no puede ver esa información mas que el desarrolador</p>
-          <p>Ahora te estas preguntando ¿que información guarda entonces para que no podamos ver?</p>
-          <p>Para responder a eso vamos analizando sus etiquetas internas por ejemplo <b>Meta</b> meta es una etiqueta que guarda y relaciona metadatos de la pagina web, esto puede explicarse como en que vocabulario esta la pagina, quien es el autor o propietario, que finalidad o aprendisaje tiene como tambien una explicación de lo que es y de que trata la pagina web.
-          la etiqueta <b>Title</b> que en español es titulo, lo que hace es ponerle el titulo ala pagina pero no cualquier titulo si no el que esta en la pestaña, este es donde te dice el nombre de la pagina en la que estas mas el logo de la página </p>
+    <header>
+        
+        <h1>Bienvenidos a nuestro Portafolio</h1>
+        <p>
+            <img id="flechita" src="img/flecha.png"><img id="flechita" src="img/flecha.png">
+            Conoce a nuestro equipo de programadores!! Haciendo click en sus perfiles
+            <img id="flechita" src="img/flecha.png"><img id="flechita" src="img/flecha.png">
+        </p>
+
+        <!--Div de Damian-->
+        <div class="perfil">
+            <a  href="damian/damian.html">Perfil de Damian</a>
         </div>
-        <img src="imagenes/pestaña.jpg" alt="pestaña" width="250px" title="pestaña de navegador" class="formato"><br>
-        <div class="dentro2">
-          <p>Entonces nos quedan <b>Link</b> y <b>Script</b> que son las etiquetas para vincular otro vocabulario o fuentes para la pagina, por ejemplo LINK sirve para vincular <b>CSS</b> que como mencionamos anteriormente sirve para darle estilos a nuestra pagina y SCRIPT para vincular otro lenguaje que se llama <b>Javascript</b> que nos va servir para interactuar con nuestra página.
-          Recuerden que todo lo que este en el Head no es visible para el usuario.</p>
+
+        <!-- Div de Rocco -->
+        <div class="perfil">
+            <a href="Rocco/Rocco.html">Perfil de Rocco</a>
         </div>
-    </div>
-  </section> <hr>
-  <section>
-    <div class="quinto">
-      <p>Ahora hablaremos de la etiqueta <b>Body</b> que en español significa cuerpo, y a lo contrario de <b>Head</b> podemos ver el contenido y es mas <b>Body</b> encuadra todo y absolutamente todo el contenido de nuestra pagina, esto quiere decir que todo lo que el usuario va a ver en nuestra pagina esta dentro del <b>Body</b> una ves entendido esto pasemos a sus etiquetas, ¿Que es lo mas grande y resaltante de una pagina web?... Claro su titulo y a diferencia de <b>Title</b> que le da un titulo pero en la pestaña <b>Header</b> le da el titulo principal ala pagina, si entramos por ejemplo a Google o Youtube lo primero y mas grande que veremos es su titulo, esto es lo que hace <b>Header</b>.</p>
-      <p>La etiqueta <b>Nav</b> que en español es navegador, nos sirve como su mismo nombre nos dice para ir navegando dentro de la pagina web, es la tipica lupa que se encuentra en redes sociales, Google, o diversas paginas que nos permiten buscar un contenido en especifico, eso es lo que hace el <b>Nav</b>.</p>
-      <p>Etiqueta <b>Main</b> que en español significa principal es toda la información principal que encontraremos en la página web, si nuestra pagina es de futbol o resetas de cosina, todo lo que es contenido y información iria dentro del <b>Main</b>.Su subetiqueta es <b>Article</b> que significa articulo, esta etiqueta hace referencia a contenido que estariamos mostrando dentro de nuestro main, como noticias de ultimo momento, relevancias en el futbol o nuevas reglas.La etiqueta <b>Section</b> que es sección, hace referencia a links a otras páginas o publicidad donde se ven anuncios o van separado temas por temas dentro de nuestra informacion principal van divididos por secciones y por el otro lado va la etiqueta <b>Aside</b> que en español significa aparte, esta etiqueta contiene información relacionada a nuestra información principal, por ejemplo en una pagina de resetas de postres en el aside podemos incluir una ensalada o un plato para cada hora del dia, pero si se dan cuenta es de la misma relación nada mas que es de otra categoria.</p>
-    </div>
-  </section><hr>
-  <section>
-    <div class="quinto2">
-      <p>Por ultimo encontraremos la etiqueta Footer que significa pie de pagina, lo que hacemos con ella es lo que esta abajo de toda pagina web, donde encontraremos numero de contacto, ubicación, gmail, copyrigh, derechos reservados, etc...</p>
-      <img src="imagenes\piedepagina.jpg" alt="imagen de footer">
-     </div>
-  </section>
-    <div class="cuarte">
-     <h3 id="explicacion">5.<u>Explicación final</u></h3>
-        <p>Para cerrar esta explicación daremos un recorrida general a lo que vinimos viendo, <b>!DOCTYPE</b> es la información que le damos ala pagina que estamos usando la ultima versión de Html, <b>HTML</b> es donde se va guardar toda nuestra información lo que seria toda la página, <b>Header</b> es todo lo que el usuario no puede ver y donde se encuentra el nombre del creador de la pagina, lenguajes links de otros lenguajes para conbinarlos y hacer una pagina completamente linda, <b>Body</b> es nuestro cuerpo de la pagina, veremos todo el contenido que hagamos ahi, tendriamos el titulo <b>Header</b> de la página su navegador <b>Nav</b> su información principal <b>Main</b> de lo que va el tema o la página, sus secciones y articulos con relación al tema o publicidad y el <b>Aside</b> donde encontraremos temas relacionados a lo que hablamos de manera externa, luego el pie de página <b>Footer</b> donde veremos numeros de contacto, información de la empresa, ubicación, etc... </p>
-    </div>
-  <footer class="pie-de-pagina">
-    <div class="pie">
-      <a href="#inicio" class="arriba"><i class="fa-solid fa-arrow-up"></i>Volver Arriba</a>
-      <p><i class="fa-solid fa-user-graduate"></i>Desarrollado por Nahuel Bogarin</p><br><br>
-      <p><i class="fa-solid fa-arrow-trend-up"></i>Derechos Reservados</p><br><br>
-      <p><i class="fa-solid fa-copyright"></i>copyrigh 2021-2022</p>
-    </div>  
-  </footer>
+
+        <!-- Div de Alejandro -->
+        <div class="perfil">
+           <a href="alejandro/alejandro.html">Perfil de Alejandro</a> 
+        </div>
+
+        <!-- Div de Nahuel -->
+        <div class="perfil">
+            <a href="nahuel/nahuel.html">Perfil de Nahuel</a>
+        </div>
+
+        <!-- Div de Jose -->
+        <div class="perfil">
+            <a href="jose/jose.html">Perfil de Jose</a>
+        </div>
+
+    </header>
     
 </body>
 </html>
