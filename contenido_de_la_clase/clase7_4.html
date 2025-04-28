@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo de la pag</title>
+</head>
+<body>
+    
+    <header><!--contenido principal de la pagina-->
+        
+        <!--Etiqueta p para parrafos-->
+        <p>Esto es un header donde va la informacion personal (no puede haver otro header dentro de otro header)</p>
+        
+        <!--Etiqueta de titulos cada uno es mas chico que el otro-->
+        <h1 id="inicio"></h1>
+        <h1>titulo tipo h1</h1>
+        <h2>Titulo tipo h2</h2>
+        <h3>Titulo tipo h3</h3>
+        <h4>Titulo tipo h4</h4>
+        <h5>Titulo tipo h5</h5>
+        <h6>Titulo tipo h6<h6>
+
+        <!--Etiqueta de formulario (para pedir info al usuario)-->
+        <!--Ambas etiquetas tienen 2 formas de enviarla y no son seguras-->
+        <h1>Formulario con metodo get</h1>
+        <form action="/formulario" method="get">
+
+            <label for="Nombre"> Ingrese el Nombre</label>
+            <input id="Nombre" name="Nombre" placeholder="Inserte el nombre">
+            <br><br>
+
+            <label for="email">Ingrese el email</label>
+            <input type="email" id="email" name="email" placeholder="Inserte el email">
+            <br><br>
+
+            <label for="DNI">Ingrese el DNI</label>
+            <input id="DNI" name="DNI" placeholder="Ingrese el DNI">
+            <br>
+            
+            <label for="date">Ingrese la fecha</label>
+            <input type="date" id="date" name="date" placeholder="fecha">
+            <br><br>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="ingrese la contraseña">
+            <br><br>
+
+
+            <!--Etiqueta de botones-->
+            <button></button>
+            <button type="reset">reiniciar</button>
+            <button type="button">boton</button>
+            <button type="submit">enviar</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h1>formulario con metodo post</h1>
+        <form action="/formulario" method="post">
+
+            <label for="Nombre"> Ingrese el Nombre</label>
+            <input id="Nombre" name="Nombre" placeholder="Inserte el nombre">
+            <br>
+            
+            <label for="email">Ingrese el email</label>
+            <input id="Nombre" name="Nombre" placeholder="Inserte el nombre">
+
+
+            <!--Etiqueta de botones-->
+            <button></button>
+            <button type="reset">reiniciar</button>
+            <button type="button">boton</button>
+            <button type="submit">enviar</button>
+        </form>
+    </header>
+
+    <footer><!--Pie de pagina-->
+       
+        <!--Etiquetas de link o hipervinculo-->
+        <a href="https://uno.edu.ar/">link a la pag de la uno,(si me dan clic los llevo a la pag de la uno)</a>
+        <br> <!--salto de linea-->
+
+        <!--en este  caso nos lleva al pie de pagina(para ir al pie de pag ahi que poner un id en otra etiqueta de arriba)-->
+        <a href="#inicio">ir al inicio de la pag</a>
+        <br>
+
+        <!--en este nos lleva a otra pag pero habre otra pestaña-->
+        <a target="_blank" href="https://uno.edu.ar/">Link a uno con otra pestaña</a>
+
+        <img src="imagen.png">
+        <img src="https://th.bing.com/th/id/OIP.uD62qS8eU4MMLkXVx9Z_sQHaD0?rs=1&pid=ImgDetMain">
+    
+    </footer>
+
+</body>
+</html>
+
+<!--clase del 7/4 todo lo que ahi aca fue lo que se vio en clase-->
