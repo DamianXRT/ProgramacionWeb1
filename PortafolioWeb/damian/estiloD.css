@@ -24,7 +24,7 @@ h1 {
 .texto1 {
     text-align: right;
     font-size: 50px;
-    margin-top: 10px; /* Added spacing */
+    margin-top: 10px; 
 	margin-right: 100px;
 }
 
@@ -63,7 +63,7 @@ a:hover {
     color: rgb(0, 255, 255); 
 }
 
-/* Footer Styles */
+
 footer {
     text-align: center;
     margin-top: 30px;
