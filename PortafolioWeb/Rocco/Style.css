@@ -1,27 +1,59 @@
-body{
-    background-color: coral;
-    background-image: url(Fondo.jpg);
+body {
+    background-color: rgb(56, 31, 148);
+    /* background-image: url(Fondo.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-#Cabeza{
-    text-align: center;
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+
+        color: green;
+}
+#Cuerpo {
     border-style: groove;
     border-color: cadetblue;
     background-color: hsl(60, 3%, 19%);
+
+}
+
+#Cabeza {
+    text-align: left;
     color: green;
 }
 
-.div{
+#Titulo {
+    text-decoration: underline;
+}
+
+
+.Imagenes {
+    width: 300px;
+    height: 300px;
+}
+
+.Lista {
+    list-style-type: square;
+    color: green;
+}
+
+.div {
     background-color: hsl(60, 3%, 19%);
     color: green;
     list-style: square;
 
 }
-
-#PieP{
-    background-color:hsl(60, 3%, 19%);
-    
+#PieP {
+    align-content: end;
+    color: black;
+    background-color: white;
+    background-color: hsl(0, 0%, 97%);
+    border-style: inset;
+    border: 3px solid;
+    border-color: blue;
 }
