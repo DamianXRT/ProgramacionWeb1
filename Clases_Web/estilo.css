@@ -1,0 +1,67 @@
+#titulo{
+    color:aqua;
+}
+
+h1{
+    color:red;
+}
+
+p.texto{/*todas as etiquetas que contengan texto van a recibir el color violeta*/
+    color:violet;
+}
+
+div p{/*todas las etiquetas p que esten dentro de div van a tener el color verde claro*/
+    color:greenyellow;
+}
+
+div h2, div h3{
+    color:blue;
+    font-size: 48px;
+}
+
+*{/* el asterisco cambia solo lo que este por default o que no tiene formato*/
+    font-size: 24px;/*aca cambia el tamaño de las letras que no fueron modificada*/
+    color:rgb(0, 0, 0);
+}
+
+.color{
+    color: #02fd84;
+    /*Colores en Hexas: #ffffff <-es blanco*/
+    /*Colers en RGB 0/255: color:rgb(125, 125, 125);*/
+    /*border: 5px red solid;*/
+    border-style: groove;
+    border-color: red;
+    border-radius: 5px;
+    border-width:5px;
+    border-bottom: 30cm;
+}
+
+#fondo{
+
+    background-color: rgba(91, 24, 48, 0.5);
+    opacity: 0.3;
+
+    background-image: url("img/fondo.jpg");
+    height: 400px;
+    background-size: cover;/*redimensiona la imagen para que se ajuste al tamañano de la ventana*/
+    /*background-size: 200px 400px;*/
+    /*background-repeat: no-repeat;*/
+
+}
+
+.margenes{
+    background-color: tomato;
+    margin: 15px 30px 25px 30px;/*margen desde las esquina de la pagina*/
+    padding: 30px 25px 15px 23px;/*el paddin acomada el texto dentro del div segun los valores que le demos*/
+    border: solid 2px black;
+    height: 20px;
+    width: 30px;
+    overflow: scroll;
+
+}
+
+.txt{
+    text-align: center;/*centra el texto al medio*/
+    /*text-decoration: line-through;pone una linea al texto*/
+    text-shadow: 3px 5px 5px black;
+}
