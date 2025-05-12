@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dami</title>
-    <link rel="stylesheet" href="estiloD.css">
+    <title>Damian</title>
+    <link rel="stylesheet" href="estilo/estiloD.css">
 </head>
 <body>
-    <!--Encabezado-->
-    <header>
-        <h1>Informacion personal.</h1>
-        <p class="texto1"> Hola soy Dami y te cuento un poquito de mi. </p>
+   <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link">Home</a>
+            <a class="header__menu__link" href="damian2.html">Sobre Mi</a>
+            <a class="header__menu__link" href="../index.html">Inicio</a>
+        </nav>
     </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Blog conjunto de presentacion del equipo:   
+                <strong class="titulo_destaque">Damian Rodriguez</strong>
+        </h1>
+            <p class="presentacion__contenido__texto"> !Hola soy Damian, estoy aprendiendo a programar y tengo un empredimiento de dieseño de post para redes.</p>
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo">Mis Contactos</h2>
+                
+                <a class="presentacion__enlaces__link" href="https://www.instagram.com/mini.disenos12">
+                    <img src="./img/insta.png">
+                    Instagram
+                </a>
+                <a class="presentacion__enlaces__link" href="mailto:damianrodriguez570@gmail.com">
+                    <img src="./img/icons8-gmail-nuevo-32.png"> 
+                    Mail
+                </a>
+                <a class="presentacion__enlaces__link" href="https://github.com/DamianXRT">
+                    <img src="./img/githube.png">
+                    GitHub
+                </a>
 
-    <hr>
+            </div>
 
-    <!-- Articulo 1 -->
-    <div class="div">
-        <h2> Mi Lenguajes favoritos.</h2>
-        <ul>
-            <li><p> Python </p></li>
-            <li><p> Java </p></li>
-            <li><p> JavaScrip </p></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="div">
-        <h2><u>Links de contacto.</u></h2>
-        <ul>
-            <li><a href="https://github.com/DamianXRT">GitHub</a></li>
-            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-        </ul>
-    </div>
-<!-- Pie de página -->
-<hr>
-<hr>
-    <footer>
-        <table>
-            <tr>
-                <th><a href="../index.html">Inicio</a></th>
-                <th><a href="https://uno.edu.ar/">Universida de la UNO</a></th>
-            </tr>
-        </table>
+        </section>
+            <img class="presentacion__imagen" src="./img/marcadeagua.png" alt="Imagen de perfil">
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Damian - Todos los derechos reservados a UNO</p><!--&copy; es el simbolo de copyright-->
     </footer>
 </body>
 </html>
-
