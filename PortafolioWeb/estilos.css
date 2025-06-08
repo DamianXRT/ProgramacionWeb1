@@ -1,83 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blanco: white;
+    --negro: black;
+    --gris: gray;
+    --fuente-mont: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
 /* Estilo global */
-body{
-    /*background-color: rgb(63, 63, 63); por si no carga la img*/
-    background-image: url(img/Fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 * {
+    margin: 0;
+    font-family: var(--fuente-krona);
     font-size: 25px;
-    margin: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Estilo para el h1 */
-h1{
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    /*background-color: rgb(35, 61, 148);*/ 
-    background-image: url(img/fondoh1.jpg);
-    background-repeat: no-repeat;
+.tema-oscuro {
+    --fondo: url('img/fondo_oscuro.png');
+    --texto-primario: var(--blanco);
+    --texto-secundario: var(--negro);
+    --fondo-elemento: var(--negro);
+    --fondo-elemento-opuesto: var(--blanco);
+    --fondo-celular: url('img/fondo_oscuro_movil.png');
+}
+
+.tema-claro {
+    --fondo: url('img/fondo_claro.png');
+    --texto-primario: var(--negro);
+    --texto-secundario: var(--blanco);
+    --fondo-elemento: var(--blanco);
+    --fondo-elemento-opuesto: var(--negro);
+    --fondo-celular: url('img/fondo_claro_movil.png');
+}
+
+body {
+    background-image: var(--fondo);
+    background-attachment: fixed;
     background-size: cover;
-    border: 5px solid  rgb(0, 0, 0);
-    text-decoration: underline;
-    padding: 80px;
-    border-radius: 8px;
- 
+    background-repeat: no-repeat;
 }
 
+/* Títulos */
+.titulo {
+    text-align: left;
+    font-size: 14.5vh;
+    color: var(--texto-primario);
+    padding: 60px 65px 90px;
+    margin: 40px 0 60px;
+}
 
-/* Estilo para el párrafo */
-#text {
-    text-align: center;
-    background-color: rgb(89, 110, 110);
-    margin: 10px;
+.subtitulo {
+    text-align: left;
+    font-size: 10vh;
+    color: var(--texto-primario);
+    padding: 70px 75px 10px;
+}
+
+/* Contenedor del menú */
+.contenedor-menu {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 1.5fr;
+    gap: 10px;
     padding: 20px;
-    font-size: 30px;
-    border: 2px solid;
-    border-radius: 8px;
+    margin: 25% 0 0 10%;
+    overflow: hidden;
 }
 
-#flechita{
-    width: 30px;
-    height: 30px;
-    background-repeat:repeat;
-
-}
-
-/* Estilo para el enlace de Damian */
-a {
-    text-decoration: none;
-    color: white; /* Añadido para que el enlace sea visible sobre el fondo gris */
-}
-a:hover{/*Efecto sobre mouse*/
-    background-color: rgb(48, 45, 41);
-    color: aqua;
-}
-
-/* Estilo básico para los divs de otros programadores */
-.perfil {
-    background-color: lightgray; 
-    padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
-    margin: 10px; /* Espacio externo para separarlo de otros elementos */
-    border: 2px solid black; /* Borde simple para destacar */
-    text-align: center; /* Centra el enlace dentro del div */
-    border-radius: 8px;
-}
-
-#pie_De_pag{
-
-    background-image: url(img/fondoh1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 4px solid black;
-    border-radius: 2%;
-    padding: 2%;
-
-}
-#texto{
-    color: rgb(255, 255, 255);
+/* Perfiles */
+.perfil, .perfil-claro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.perfil {
+    background-color: var(--fondo-elemento);
+    color: var(--texto-primario);
+}
+
+.perfil-claro {
+    background-color: var(--fondo-elemento);
+    color: var(--texto-primario);
+}
+
+.perfil:nth-child(5) {
+    grid-column: 1 / span 2;
+}
+
+.perfil:hover, .perfil-claro:hover {
+    transform: scale(1.05);
+}
+
+.perfil a, .perfil-claro a {
+    text-decoration: none;
+    color: var(--texto-primario);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil:hover a {
+    background-color: var(--fondo-elemento-opuesto);
+    color: var(--texto-secundario);
+}
+
+.perfil-claro:hover a {
+    background-color: var(--fondo-elemento-opuesto);
+    color: var(--texto-secundario);
+}
+
+/* Footer */
+#pie_de_pag {
+    background-color: var(--fondo-elemento);
+    color: var(--texto-primario);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#texto {
+    color: var(--texto-primario);
     font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Botón */
+.cambio {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--fondo-elemento);
+    color: var(--texto-primario);
+    transition: background-color 0.3s;
+    margin-left: 50%;
+}
+
+.cambio:hover {
+    background-color: var(--gris);
+}
+
+/* Media queries para adaptar a diferentes pantallas */
+@media (max-width: 1000px) {
+    body {
+        background-image: var(--fondo-celular);
+        background-size: cover;
+        background-position: center;
+    }
+    .contenedor-menu {
+        width: 90%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        margin: 10% auto;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 9px 65px 6px 35px;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+        text-align: center;
+        padding:  7px 10px 10px;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+        width:auto;
+    }
+
+    .cambio{
+        padding: 10px 20px 30px;
+    }
 }

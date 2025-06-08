@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons.png">
     <title>Portafolio Web</title>
 </head>
-<body>
+<body class="tema-oscuro">
+    <button class="cambio" onclick="cambiartema()">Cambiar tema a claro</button>
     <header>
         
-        <h1>Bienvenidos a nuestro Portafolio</h1>
-        <p id="text">
-            <img id="flechita" src="img/flecha.png"><img id="flechita" src="img/flecha.png">
-            Conoce a nuestro equipo de programadores!! Haciendo click en sus perfiles
-            <img id="flechita" src="img/flecha.png"><img id="flechita" src="img/flecha.png">
-        </p>
+        <h1 class="titulo">Bienvenidos a nuestro Portafolio!</h1>
+        <h2 class="subtitulo">Baja y conoce a nuestro equipo de programadores!</h2>
+        
+        <div class="contenedor-menu">
+            <!--Div de Damian-->
+            <div class="perfil">
+                <a  href="damian/damian.html">Perfil de Damian</a>
+            </div>
 
-        <!--Div de Damian-->
-        <div class="perfil">
-            <a  href="damian/damian.html">Perfil de Damian</a>
-        </div>
+            <!-- Div de Rocco -->
+            <div class="perfil">
+                <a href="Rocco/Rocco.html">Perfil de Rocco</a>
+            </div>
 
-        <!-- Div de Rocco -->
-        <div class="perfil">
-            <a href="Rocco/Rocco.html">Perfil de Rocco</a>
-        </div>
+            <!-- Div de Alejandro -->
+            <div class="perfil">
+            <a href="alejandro/alejandro.html">Perfil de Alejandro</a> 
+            </div>
 
-        <!-- Div de Alejandro -->
-        <div class="perfil">
-           <a href="alejandro/alejandro.html">Perfil de Alejandro</a> 
-        </div>
+            <!-- Div de Nahuel -->
+            <div class="perfil">
+                <a href="nahuel/nahuel.html">Perfil de Nahuel</a>
+            </div>
 
-        <!-- Div de Nahuel -->
-        <div class="perfil">
-            <a href="nahuel/nahuel.html">Perfil de Nahuel</a>
-        </div>
-
-        <!-- Div de Jose -->
-        <div class="perfil">
-            <a href="jose/jose.html">Perfil de Jose</a>
+            <!-- Div de Jose -->
+            <div class="perfil">
+                <a href="jose/jose.html">Perfil de Jose</a>
+            </div>
         </div>
 
     </header>
@@ -46,6 +46,6 @@
     <footer id="pie_De_pag"><!--Pie de pagina-->
         <p id="texto">&copy;2025 derechos reservadoss</p>
     </footer>
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
