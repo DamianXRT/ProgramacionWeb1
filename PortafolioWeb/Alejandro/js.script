@@ -1,0 +1,26 @@
+// Animaciones y efectos
+const presentacionContenido = document.querySelector('.presentacion__contenido');
+presentacionContenido.addEventListener('mouseover', () => {
+ presentacionContenido.style.transform = 'scale(1.01)';
+ presentacionContenido.style.transition = 'all 0.3s ease';
+});
+presentacionContenido.addEventListener('mouseout', () => {
+ presentacionContenido.style.transform = 'scale(1)';
+ presentacionContenido.style.transition = 'all 0.3s ease';
+});
+const footer = document.querySelector('.footer');
+footer.addEventListener('mouseover', () => {
+ footer.style.transform = 'scale(1.01)';
+ footer.style.transition = 'all 0.3s ease';
+});
+footer.addEventListener('mouseout', () => {
+ footer.style.transform = 'scale(1)';
+ footer.style.transition = 'all 0.3s ease';
+});
+// Agregué un efecto de carga de la página
+document.addEventListener('DOMContentLoaded', () => {
+ const cuerpo = document.body;
+ cuerpo.style.opacity = '1';
+ cuerpo.style.transition = 'opacity 1s ease';
+});
+
