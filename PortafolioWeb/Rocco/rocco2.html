@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/LogoVYX.PNG">
 </head>
 <body>
     <header class="header">
         <nav class="header__menu">
             <a class="header__menu__link" href="rocco.html">Home</a>
-            <a class="header__menu__link">Sobre Mi</a>
+            <a class="header__menu__link" href="rocco2.html">Sobre Mi</a>
             <a class="header__menu__link" href="../index.html">Inicio</a>
         </nav>
     </header>
     <main class="presentacion">
         <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo"">Sobre mi</h1>
+            <h1 class="presentacion__contenido__titulo">Sobre mi.</h1>
             <p class="presentacion__contenido__texto">Soy estudiante de programacion de la Tecnicatura en Tecnologias Web</p>
             <p class="presentacion__contenido__texto">Mis lenguajes favoritos son:</p>
             <ul>
@@ -31,11 +31,28 @@
                     <p class="presentacion__contenido__texto">SQL</p>
                 </li>
             </ul>
+            <br>
         </section>
-        <img class="presentacion__imagen" src="./Imagenes/rocco_yo.jpg" alt="Imagen de Perfil">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">Mi otro hobbie.</h1>
+            <p class="presentacion__contenido__texto">Ademas de programador, mi otra pasion siempre ha sido la escritura, aqui unos fragmentos de texto
+                de un servidor en el cual cuento mis historias
+            </p>
+            <div class="carousel">
+                <button class="carousel__btn" id="prev">◀</button>
+                <img class="carousel__imagen" id="carousel-img" src="./Imagenes/Mapa_Rol.PNG" alt="Carrusel">
+                <button class="carousel__btn" id="next">▶</button>
+            </div>
+            <div id="lightbox" class="lightbox hidden">
+                <span id="lightbox-close" class="lightbox__close">&times;</span>
+                <img id="lightbox-img" class="lightbox__img" src="" alt="Imagen ampliada">
+            </div>
+        </section>
+        <img class="presentacion__imagen" src="./Imagenes/Icono_Mi.png" alt="Imagen de Perfil">
     </main>
     <footer class="footer">
         <p>&copy; 2025 Rocco - Todos los derechos reservados a UNO</p>
+        <script src="Scripts/Script.js"></script>
     </footer>
 </body>
 </html>
