@@ -120,6 +120,7 @@ body{
     font-family: var(--fuente-mont);
     font-size: 1.5rem;
     font-weight: 400;
+    margin-top: 90px;
 }
 
 @media (max-width: 1000px) {
@@ -172,5 +173,6 @@ body{
     .footer {
         font-size: 1.2rem;
         padding: 1rem 2rem;
+        margin-top: 20rem;
     }
 }
