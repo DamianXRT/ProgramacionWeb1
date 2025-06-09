@@ -17,18 +17,20 @@
             <a class="header__menu__link" href="../index.html">Inicio</a>
         </nav>
     </header>
-    <main class="presentacion">
+    <main class="presentacion" id="textos_juego">
         <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo"">Sobre mi</h1>
-            <p class="presentacion__contenido__texto">
-                <strong class="titulo_destaque">Nombre: </strong> Jose Luis Gonzalez Tolaba</p>
-            <p class="presentacion__contenido__texto">
-                <strong class="titulo_destaque">Edad:  </strong>30 Años</p>
-            <p class="presentacion__contenido__texto">
-                <strong class="titulo_destaque">Direccion: </strong>Merlo</p>
-
+            <h1 class="presentacion__contenido__titulo"></h1>
+                <div class="container__texto">
+                    <h1 id="texto_inicial"></h1>
+                    <p class="texto__parrafo" id="texto_ingrese"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="container__botones">
+                    <button onclick="verificarIntento();" class="container__boton" id="intento">Intentar</button>
+                    <button onclick="reiniciarJuego();"   class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+                
         </section>
-        <img class="presentacion__imagen" src="./assets/foto_mate.jpeg" alt="Imagen de Jose trabajando">
     </main>
     <footer class="footer">
         <p>Desarrollado por Jose</p>
